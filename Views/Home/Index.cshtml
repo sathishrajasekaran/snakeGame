@@ -1,0 +1,18 @@
+﻿@model snakeGame.Models.GameViewModel
+
+@{
+    ViewData["Title"] = "Snake Game";
+}
+
+<div class="game-shell">
+    <h1>Snake Game</h1>
+    <p class="subtitle">Use the arrow keys to guide the snake and eat the food.</p>
+
+    <div class="status-bar">
+        <span id="score">Score: 3</span>
+        <button id="restartButton" class="btn btn-primary">Restart Game</button>
+    </div>
+
+    <div id="gameBoard" class="game-board" data-grid-size="@Model.GridSize"></div>
+    <p id="message" class="game-message">Press any arrow key to start.</p>
+</div>
