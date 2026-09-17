@@ -15,8 +15,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var viewModel = new GameViewModel();
-        return View(viewModel);
+        var viewMode = new GameViewModel();
+        return View(viewMode);
     }
 
     public IActionResult Privacy()
